@@ -1,0 +1,30 @@
+{
+  "command": {
+    "executable": "kotlinc",
+    "scriptPath": "foo.kts"
+  },
+  "errors": {
+    "compilerNotFound": "Kotlin compiler not found. Please install it and make sure it's included in the PATH environmental variable.",
+    "generic": "The following error occurred while running the script: "
+  },
+  "keywordsJson": "src/main/resources/files/keywords.json",
+  "errorPrefix": "(!)",
+  "colors": {
+    "error": "#FFFF474C",
+    "primary": "#FF0099FF",
+    "string": "#FF33A1FD",
+    "comment": "#FFBD897E",
+    "themes": {
+      "light": {
+        "text": "#FF000000",
+        "background": "#FFFFFFFF",
+        "container": "#FFC2C2C2"
+      },
+      "dark": {
+        "text": "#FFFFFFFF",
+        "background": "#FF000000",
+        "container": "#FF343434"
+      }
+    }
+  }
+}

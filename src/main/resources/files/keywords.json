@@ -1,0 +1,194 @@
+[
+  {
+    "word": "fun",
+    "color": "#FF9E3F"
+  },
+  {
+    "word": "val",
+    "color": "#8AFF6C"
+  },
+  {
+    "word": "var",
+    "color": "#8AFF6C"
+  },
+  {
+    "word": "class",
+    "color": "#FF66C4"
+  },
+  {
+    "word": "object",
+    "color": "#FF66C4"
+  },
+  {
+    "word": "interface",
+    "color": "#FF66C4"
+  },
+  {
+    "word": "if",
+    "color": "#F78C6B"
+  },
+  {
+    "word": "else",
+    "color": "#F78C6B"
+  },
+  {
+    "word": "when",
+    "color": "#F78C6B"
+  },
+  {
+    "word": "for",
+    "color": "#F78C6B"
+  },
+  {
+    "word": "while",
+    "color": "#F78C6B"
+  },
+  {
+    "word": "do",
+    "color": "#F78C6B"
+  },
+  {
+    "word": "break",
+    "color": "#F78C6B"
+  },
+  {
+    "word": "continue",
+    "color": "#F78C6B"
+  },
+  {
+    "word": "return",
+    "color": "#F78C6B"
+  },
+  {
+    "word": "private",
+    "color": "#66B2FF"
+  },
+  {
+    "word": "protected",
+    "color": "#66B2FF"
+  },
+  {
+    "word": "public",
+    "color": "#66B2FF"
+  },
+  {
+    "word": "internal",
+    "color": "#66B2FF"
+  },
+  {
+    "word": "override",
+    "color": "#FFA366"
+  },
+  {
+    "word": "open",
+    "color": "#FFA366"
+  },
+  {
+    "word": "abstract",
+    "color": "#FFA366"
+  },
+  {
+    "word": "final",
+    "color": "#FFA366"
+  },
+  {
+    "word": "import",
+    "color": "#A866FF"
+  },
+  {
+    "word": "package",
+    "color": "#A866FF"
+  },
+  {
+    "word": "as",
+    "color": "#A866FF"
+  },
+  {
+    "word": "in",
+    "color": "#66FFD9"
+  },
+  {
+    "word": "until",
+    "color": "#66FFD9"
+  },
+  {
+    "word": "step",
+    "color": "#66FFD9"
+  },
+  {
+    "word": "is",
+    "color": "#66FFD9"
+  },
+  {
+    "word": "null",
+    "color": "#FF5C5C"
+  },
+  {
+    "word": "true",
+    "color": "#FF5C5C"
+  },
+  {
+    "word": "false",
+    "color": "#FF5C5C"
+  },
+  {
+    "word": "try",
+    "color": "#FFD966"
+  },
+  {
+    "word": "catch",
+    "color": "#FFD966"
+  },
+  {
+    "word": "finally",
+    "color": "#FFD966"
+  },
+  {
+    "word": "throw",
+    "color": "#FFD966"
+  },
+  {
+    "word": "throws",
+    "color": "#FFD966"
+  },
+  {
+    "word": "this",
+    "color": "#66FFCC"
+  },
+  {
+    "word": "super",
+    "color": "#66FFCC"
+  },
+  {
+    "word": "companion",
+    "color": "#66FF99"
+  },
+  {
+    "word": "const",
+    "color": "#66FF99"
+  },
+  {
+    "word": "lateinit",
+    "color": "#66FF99"
+  },
+  {
+    "word": "suspend",
+    "color": "#FFAA99"
+  },
+  {
+    "word": "inline",
+    "color": "#FFAA99"
+  },
+  {
+    "word": "data",
+    "color": "#66CCFF"
+  },
+  {
+    "word": "enum",
+    "color": "#66CCFF"
+  },
+  {
+    "word": "annotation",
+    "color": "#66CCFF"
+  }
+]
