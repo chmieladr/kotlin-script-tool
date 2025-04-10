@@ -12,15 +12,19 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import org.example.config.Config
 import org.example.config.Theme
 import org.example.util.Utils
 import kotlin.properties.Delegates
 
 object CommonStyles {
+    private var fontSize: Int by Delegates.notNull()
     private var containerColor: Color by Delegates.notNull()
     private var textColor: Color by Delegates.notNull()
 
-    fun init(themeAssets: Theme) {
+    fun init(config: Config, themeAssets: Theme) {
+        fontSize = config.fontSize
+
         containerColor = Utils.parseColor(themeAssets.container)
         textColor = Utils.parseColor(themeAssets.text)
     }
@@ -34,7 +38,7 @@ object CommonStyles {
     val textStyle: TextStyle
         get() = TextStyle(
             color = textColor,
-            fontSize = 16.sp,
+            fontSize = fontSize.sp,
             fontFamily = FontFamily.Monospace
         )
 

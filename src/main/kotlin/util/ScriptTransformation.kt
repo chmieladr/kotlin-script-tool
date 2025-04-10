@@ -15,11 +15,11 @@ class ScriptTransformation(
     private val defaultColor: Color,
     private var stringColor: Color? = null,
     private var commentColor: Color? = null
-) : CustomVisualTransformation {
+) : CustomVisualTransformation() {
+    private val config = ConfigLoader.config
     private val keywords = mutableListOf<Keyword>()
 
     init {
-        val config = ConfigLoader.config
         stringColor = stringColor ?: Utils.parseColor(config.colors.string)
         commentColor = commentColor ?: Utils.parseColor(config.colors.comment)
     }
@@ -33,26 +33,11 @@ class ScriptTransformation(
     }
 
     override fun highlight(text: String): Pair<AnnotatedString, OffsetMapping> {
-        val transformed = StringBuilder()
-        val offsetMapToOriginal = mutableListOf<Int>()
-        var i = 0
         var inString = false
         var inComment = false
 
-        // Replacing tabs with spaces
-        while (i < text.length) {
-            val c = text[i]
-            if (c == '\t') {
-                repeat(4) {
-                    transformed.append(' ')
-                    offsetMapToOriginal.add(i)
-                }
-            } else {
-                transformed.append(c)
-                offsetMapToOriginal.add(i)
-            }
-            i++
-        }
+        // Replace tabs with spaces and create an initial offset map
+        val (transformed, offsetMapToOriginal) = replaceTabsWithSpaces(text)
 
         val annotated = buildAnnotatedString {
             i = 0
@@ -60,9 +45,9 @@ class ScriptTransformation(
                 val c = transformed[i]
 
                 // Basic string and comment detection to avoid highlighting keywords inside them
-                if (c == '"' && !inComment) {
+                if ((c == '"' && !inComment)) {
                     inString = !inString
-                    withStyle(SpanStyle(color = (if (inString) stringColor else defaultColor)!!)) {
+                    withStyle(SpanStyle(color = stringColor!!)) {
                         append(c)
                     }
                     i++

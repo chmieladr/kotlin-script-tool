@@ -7,6 +7,7 @@
     "compilerNotFound": "Kotlin compiler not found. Please install it and make sure it's included in the PATH environmental variable.",
     "generic": "The following error occurred while running the script: "
   },
+  "fontSize": 16,
   "keywordsJson": "src/main/resources/files/keywords.json",
   "errorPrefix": "(!)",
   "colors": {
@@ -14,6 +15,7 @@
     "primary": "#FF0099FF",
     "string": "#FF33A1FD",
     "comment": "#FFBD897E",
+    "link": "#FF4444FF",
     "themes": {
       "light": {
         "text": "#FF000000",

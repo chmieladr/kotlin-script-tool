@@ -5,5 +5,6 @@ data class Colors (
     val primary: String,
     val string: String,
     val comment: String,
+    val link: String,
     val themes: Map<String, Theme>
 )
